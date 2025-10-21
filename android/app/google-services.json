@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "516168208239",
+    "project_id": "fire-2d1ad",
+    "storage_bucket": "fire-2d1ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516168208239:android:fc664c2e73d5c5d475a29a",
+        "android_client_info": {
+          "package_name": "com.hero.fire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClSoyYFl50jEb0ydLCPDWdiy9n19qoNnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
