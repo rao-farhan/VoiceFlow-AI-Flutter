@@ -1,16 +1,7 @@
-import 'package:fire_base/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'splash_screen.dart';
 
-
-void main() async {
-  // Ensure Flutter bindings are initialized
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Initialize Firebase asynchronously
-  await Firebase.initializeApp();
-
-  // Run your app after Firebase is ready
+void main() {
   runApp(const MyApp());
 }
 
@@ -20,8 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: SplashScreen()
+      debugShowCheckedModeBanner: false,
+      title: "Platform Splash App",
+      home: const SplashScreen(),
     );
   }
 }
+
