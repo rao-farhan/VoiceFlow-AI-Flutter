@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Wait 3 seconds then navigate
+    
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
