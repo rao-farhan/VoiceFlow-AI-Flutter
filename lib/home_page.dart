@@ -8,7 +8,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
-      // 🟢 Android UI
       return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
@@ -16,20 +15,19 @@ class HomePage extends StatelessWidget {
         ),
         body: const Center(
           child: Text(
-            "Hello Android User 👋",
+            "Hello Android User",
             style: TextStyle(fontSize: 22, color: Colors.green),
           ),
         ),
       );
     } else if (Platform.isIOS) {
-      // 🔵 iOS UI
       return CupertinoPageScaffold(
         navigationBar: const CupertinoNavigationBar(
           middle: Text("iOS Home"),
         ),
         child: const Center(
           child: Text(
-            "Hello iOS User 🍏",
+            "Hello iOS User",
             style: TextStyle(
               fontSize: 22,
               color: CupertinoColors.activeBlue,
@@ -38,7 +36,6 @@ class HomePage extends StatelessWidget {
         ),
       );
     } else {
-      // ⚪ Default fallback (e.g. Web)
       return Scaffold(
         appBar: AppBar(title: const Text("Other Platform")),
         body: const Center(
